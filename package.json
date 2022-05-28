@@ -15,6 +15,15 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
-    "nodemon": "^2.0.16"
-  }
+    "nodemon": "^2.0.16",
+    "package.json": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramnath2001/warhouse-webpage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ramnath2001/warhouse-webpage/issues"
+  },
+  "homepage": "https://github.com/Ramnath2001/warhouse-webpage#readme"
 }

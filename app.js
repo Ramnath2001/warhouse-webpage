@@ -21,8 +21,8 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
-app.post("/test", function(re1, res){
-    const process = spawn('python', ['./python_scripts/test_model.py']);
+app.get("/test", function(re1, res){
+    const process = spawn('python', ['./python_scripts/test.py']);
 
     process.stdout.on('data', function(data) {
         console.log(`stdout ${data}`);
@@ -35,10 +35,12 @@ app.post("/test", function(re1, res){
         
     });
     
-    process.on('close', (code)=>{s
+    process.on('close', (code)=>{
         console.log(`child process exited with code ${code}`);
     });
 })
+
+
 
 
 app.listen(process.env.PORT || 8080, function(){
