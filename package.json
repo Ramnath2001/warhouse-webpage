@@ -1,0 +1,20 @@
+{
+  "name": "warehouse-system",
+  "version": "1.0.0",
+  "description": "web app for IOT warehouse monitoring system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RAMNATH K",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "nodemon": "^2.0.16"
+  }
+}
