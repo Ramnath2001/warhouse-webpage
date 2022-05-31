@@ -22,11 +22,12 @@ app.get("/", function(req, res){
 });
 
 app.get("/test", function(re1, res){
-    const process = spawn('python', ['./python_scripts/test.py']);
+    const process = spawn('python', ['./python_scripts/main.py']);
 
     process.stdout.on('data', function(data) {
         console.log(`stdout ${data}`);
         res.send(data.toString());
+        // res.redirect("/");
     });
     
     process.stderr.on('data', (data)=>{
